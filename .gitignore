@@ -1,0 +1,28 @@
+# Built files
+*.iml
+.gradle/
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# Local configuration
+local.properties
+
+# IDE files (whole .idea folder)
+.idea/
+
+# OS metadata
+.DS_Store
+
+# Keystore files
+*.jks
+*.keystore
+*.key
+
+# Build outputs
+*.apk
+*.aab
+
+# Gradle daemon
+gradle-daemon-jvm.properties
