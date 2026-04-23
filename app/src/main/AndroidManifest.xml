@@ -12,15 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizApp">
 
-        <activity android:name=".activities.MainActivity"
-            android:exported="true">
+        <!-- Splash Screen (Launcher) -->
+        <activity android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.QuizApp.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Category Selection -->
+        <activity android:name=".activities.CategoryActivity" />
+
+        <!-- Quiz Screen -->
         <activity android:name=".activities.QuizActivity" />
+
+        <!-- Result Screen -->
         <activity android:name=".activities.ResultActivity" />
+
     </application>
 
 </manifest>
