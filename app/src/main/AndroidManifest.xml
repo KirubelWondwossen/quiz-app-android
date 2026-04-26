@@ -31,6 +31,11 @@
         <!-- Result Screen -->
         <activity android:name=".activities.ResultActivity" />
 
+        <!-- Login and Registration -->
+        <activity android:name=".activities.LoginActivity"
+            android:exported="true" />
+        <activity android:name=".activities.RegisterActivity" />
+
     </application>
 
 </manifest>

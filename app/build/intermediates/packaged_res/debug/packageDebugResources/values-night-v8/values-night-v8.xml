@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.QuizApp" parent="Theme.MaterialComponents.NoActionBar">
+        
+        <item name="colorPrimary">@color/quizzy_purple_primary</item>
+        <item name="colorPrimaryVariant">@color/quizzy_bg_medium</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/quizzy_purple_accent</item>
+        <item name="colorSecondaryVariant">@color/quizzy_purple_light</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <item name="android:statusBarColor">@color/quizzy_status_bar</item>
+        <item name="android:navigationBarColor">@color/quizzy_bg_dark</item>
+        <item name="android:windowBackground">@color/quizzy_bg_dark</item>
+    </style>
+    <style name="Theme.QuizApp.Splash" parent="Theme.QuizApp">
+        <item name="android:windowBackground">@color/quizzy_bg_dark</item>
+    </style>
+</resources>

@@ -103,7 +103,7 @@ public class RegisterActivity extends AppCompatActivity {
             UserSession session = new UserSession(this);
             session.createLoginSession((int) result, username);
 
-            Intent intent = new Intent(RegisterActivity.this, HomeActivity.class);
+            Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
             finish();

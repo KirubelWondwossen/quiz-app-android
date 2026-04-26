@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_dark">
+
+    <TextView
+        android:id="@+id/tvSplashTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Quizzy"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.05" />
+
+    <TextView
+        android:id="@+id/tvSplashSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSplashTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Test Your Knowledge"
+        android:textSize="16sp"
+        android:textColor="#B8B8D0"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.15" />
+
+</RelativeLayout>

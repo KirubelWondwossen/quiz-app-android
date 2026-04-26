@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient_dark"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <!-- Score Circle -->
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_result_circle"
+        android:layout_marginBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvScorePercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80%"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvScoreFraction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4/5"
+                android:textSize="18sp"
+                android:textColor="#B8B8D0" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvResultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Great Job! 🎉"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvResultMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You answered most questions correctly!"
+        android:textSize="16sp"
+        android:textColor="#B8B8D0"
+        android:gravity="center"
+        android:layout_marginBottom="48dp" />
+
+    <TextView
+        android:id="@+id/btnRetry"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="Try Again"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_button_primary"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/btnHome"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="Back to Categories"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#B388FF"
+        android:background="@drawable/bg_button_secondary"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout>

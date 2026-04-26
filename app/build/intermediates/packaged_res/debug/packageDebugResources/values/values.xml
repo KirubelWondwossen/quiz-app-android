@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="cat_adv_programming">#536DFE</color>
+    <color name="cat_data_structure">#448AFF</color>
+    <color name="cat_database">#FF6D00</color>
+    <color name="cat_ml">#EC4899</color>
+    <color name="cat_programming">#7C4DFF</color>
+    <color name="cat_software_dev">#00BFA5</color>
+    <color name="cat_software_test">#FFD600</color>
+    <color name="cat_statistics">#FF5252</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="quizzy_bg_card">#362272</color>
+    <color name="quizzy_bg_dark">#1A1035</color>
+    <color name="quizzy_bg_medium">#2D1B69</color>
+    <color name="quizzy_correct">#4CAF50</color>
+    <color name="quizzy_gradient_end">#1A1035</color>
+    <color name="quizzy_gradient_start">#2D1B69</color>
+    <color name="quizzy_incorrect">#F44336</color>
+    <color name="quizzy_option_bg">#2A1F5E</color>
+    <color name="quizzy_option_selected">#7C4DFF</color>
+    <color name="quizzy_option_stroke">#4A3A8A</color>
+    <color name="quizzy_pink_accent">#EC4899</color>
+    <color name="quizzy_purple_accent">#A855F7</color>
+    <color name="quizzy_purple_light">#B388FF</color>
+    <color name="quizzy_purple_primary">#7C4DFF</color>
+    <color name="quizzy_status_bar">#130D2B</color>
+    <color name="quizzy_text_muted">#8888A8</color>
+    <color name="quizzy_text_primary">#FFFFFF</color>
+    <color name="quizzy_text_secondary">#B8B8D0</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Quizzy</string>
+    <style name="Theme.QuizApp" parent="Theme.MaterialComponents.NoActionBar">
+        
+        <item name="colorPrimary">@color/quizzy_purple_primary</item>
+        <item name="colorPrimaryVariant">@color/quizzy_bg_medium</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/quizzy_purple_accent</item>
+        <item name="colorSecondaryVariant">@color/quizzy_purple_light</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <item name="android:statusBarColor">@color/quizzy_status_bar</item>
+        <item name="android:navigationBarColor">@color/quizzy_bg_dark</item>
+        <item name="android:windowBackground">@color/quizzy_bg_dark</item>
+    </style>
+    <style name="Theme.QuizApp.Splash" parent="Theme.QuizApp">
+        <item name="android:windowBackground">@color/quizzy_bg_dark</item>
+    </style>
+</resources>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient_dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:contentDescription="Back"
+            android:tint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvCategoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Programming"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvQuestionCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="1/5"
+            android:textSize="16sp"
+            android:textColor="#B8B8D0" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="24dp"
+        android:max="100"
+        android:progress="20"
+        android:progressDrawable="@drawable/bg_progress_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:paddingHorizontal="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvQuestionType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multiple Choice"
+                android:textSize="13sp"
+                android:textColor="#B388FF"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:lineSpacingMultiplier="1.3"
+                android:layout_marginBottom="28dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btnOption1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="20dp"
+                    android:text="Option A"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_option_default"
+                    android:layout_marginBottom="12dp"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/btnOption2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="20dp"
+                    android:text="Option B"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_option_default"
+                    android:layout_marginBottom="12dp"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/btnOption3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="20dp"
+                    android:text="Option C"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_option_default"
+                    android:layout_marginBottom="12dp"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/btnOption4"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="20dp"
+                    android:text="Option D"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_option_default"
+                    android:layout_marginBottom="12dp"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutTrueFalse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/btnTrue"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="True"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_option_default"
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/btnFalse"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="False"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_option_default"
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutFillBlank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/etAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:hint="Type your answer here..."
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#8888A8"
+                    android:background="@drawable/bg_edit_text"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/btnPrevious"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="← Previous"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#B388FF"
+            android:background="@drawable/bg_button_secondary"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="Next →"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_button_primary"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+</LinearLayout>
