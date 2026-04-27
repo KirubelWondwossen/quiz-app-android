@@ -73,9 +73,9 @@ public class ResultActivity extends AppCompatActivity {
             finish();
         });
 
-        // Home - go back to categories
+        // Home - go back to MainActivity
         btnHome.setOnClickListener(v -> {
-            Intent intent = new Intent(ResultActivity.this, CategoryActivity.class);
+            Intent intent = new Intent(ResultActivity.this, MainActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish();
