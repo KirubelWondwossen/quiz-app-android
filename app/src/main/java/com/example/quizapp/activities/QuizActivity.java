@@ -15,6 +15,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.quizapp.R;
 import com.example.quizapp.data.DBHelper;
 import com.example.quizapp.data.Question;
+import com.example.quizapp.data.QuizResult;
+import com.example.quizapp.data.UserSession;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 import java.util.List;
 
@@ -249,6 +254,17 @@ public class QuizActivity extends AppCompatActivity {
                     score++;
                 }
             }
+        }
+
+        UserSession session = new UserSession(this);
+        if (!session.isGuest()) {
+            QuizResult result = new QuizResult();
+            result.setUserId(session.getUserId());
+            result.setCategory(category);
+            result.setScore(score);
+            result.setTotalQuestions(questionList.size());
+            result.setDateTime(new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault()).format(new Date()));
+            dbHelper.saveResult(result);
         }
 
         Intent intent = new Intent(QuizActivity.this, ResultActivity.class);
